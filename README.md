@@ -48,7 +48,10 @@
 
 지난 기록은 월별 목록에서 날짜와 제목, 본문 일부를 확인할 수 있습니다. 과거 날짜의 일기도 작성할 수 있고, 목록에서 글을 열어 수정하거나 삭제할 수 있습니다.
 
-<p align="center"><img src="Docs/Images/detail.png" width="320" alt="저장한 일기를 읽고 수정하거나 삭제할 수 있는 화면"></p>
+<p align="center">
+<img src="Docs/Images/detail.png" width="320" alt="저장한 일기를 읽고 수정하거나 삭제할 수 있는 화면">
+<img src="Docs/Images/history.png" width="320" alt="날짜와 제목, 본문 미리보기를 간결하게 보여 주는 월별 일기 목록">
+</p>
 
 <br>
 
