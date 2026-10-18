@@ -2,7 +2,7 @@
 
 # Dear Today
 
-**일기장 어플리케이션**
+**간단한 일기장 어플리케이션**
 
 ![Java 17](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)
 ![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)
@@ -28,7 +28,7 @@
 
 ## 프로젝트 소개
 
-**Dear Today**(오늘하루는)는 잠들기 전에 오늘 있었던 일과 마음을 짧게 남기는 Android 일기장입니다. 하루를 길게 정리하지 않아도 한두 줄을 적고 마무리할 수 있는 앱으로 만들었습니다. 제목은 생략할 수 있고, 작성 시간을 제한하는 타이머는 없습니다.
+**Dear Today**(오늘하루는)는 잠들기 전에 오늘 있었던 일과 마음을 짧게 남기는 Android 일기장입니다. 하루를 길게 정리하지 않아도 한두 줄을 적고 마무리할 수 있는 앱으로 만들었습니다.
 
 모바일 프로그래밍 강의에서 배운 내용을 실제 앱에 적용해 보기 위해 시작했습니다. Java와 모바일 프로그래밍을 처음 배우는 단계에서 Android Studio로 ‘나만의 일기장’을 만들었고, 이후 수업에서 배운 데이터베이스와 AI 도구를 활용해 기능과 화면을 보완했습니다.
 
