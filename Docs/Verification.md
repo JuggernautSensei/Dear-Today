@@ -15,7 +15,7 @@
 | 빌드 | Gradle 8.11.1 / Android Gradle Plugin 8.9.2 |
 | 한글 입력 | Fcitx5 Android 0.1.3 + Hangul 플러그인 |
 
-Android Studio는 설치하지 않았습니다. JDK와 SDK는 프로젝트 밖의 사용자 도구 폴더에 설치했습니다. 전용 가상 기기만 생성·설정했고, 기존 과제와 기존 가상 기기는 수정하지 않았습니다.
+기존 과제는 Android Studio에서 개발했습니다. 이번 AI 개선본의 로컬 빌드와 검증에는 Android Studio 대신 별도의 JDK·SDK와 Gradle을 사용했습니다. JDK와 SDK는 프로젝트 밖의 사용자 도구 폴더에 설치했습니다. 전용 가상 기기만 생성·설정했고, 기존 과제와 기존 가상 기기는 수정하지 않았습니다.
 
 ## 빌드와 자동 검증
 
@@ -66,4 +66,4 @@ Lint 경고는 고정한 AndroidX 테스트 라이브러리의 새 버전 알림
 
 실제 Android 휴대폰, 모든 OS 버전, 제조사별 키보드, 태블릿·가로 화면, TalkBack, 저장 공간 부족의 실제 재현, 장기간 사용은 검증하지 않았습니다. 자동 저장 직전의 강제 종료까지 모든 입력이 보존된다고 보장하지 않습니다. 데이터베이스 파일을 별도 암호화하지 않습니다.
 
-GitHub용 워크플로 파일은 준비했지만 원격 저장소를 생성하거나 push하지 않았으므로 GitHub Actions 실행을 완료했다고 표시하지 않습니다. Release APK는 개발용 Debug APK와 달리 서명되지 않았으며, 배포용 서명 검증을 수행하지 않았습니다.
+위 검증은 로컬 실행 결과이며 GitHub Actions 실행 결과는 포함하지 않습니다. 자동 빌드 결과는 [Actions 페이지](https://github.com/JuggernautSensei/Dear-Today/actions)에서 별도로 확인할 수 있습니다. Release APK는 개발용 Debug APK와 달리 서명되지 않았으며, 배포용 서명 검증을 수행하지 않았습니다.

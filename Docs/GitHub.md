@@ -16,14 +16,18 @@ git commit -m "feat: describe the change"
 
 ## 원격 연결
 
-현재 원격 저장소는 생성하거나 연결하지 않았습니다. GitHub에서 빈 저장소를 만든 뒤 다음 명령으로 연결할 수 있습니다. 원격에 README나 기존 파일이 있는 저장소에는 그대로 적용하지 말고 기존 이력을 확인합니다.
+원격 `origin`은 [JuggernautSensei/Dear-Today](https://github.com/JuggernautSensei/Dear-Today)에 연결했습니다. 연결 시점에는 원격에 브랜치나 커밋이 없는 것을 확인했습니다. 현재 로컬 이력을 업로드하려면 다음 명령을 사용합니다.
 
 ```powershell
-git remote add origin https://github.com/OWNER/TodayDiary.git
 git push -u origin main
 ```
 
-`OWNER`는 실제 계정 또는 조직 이름으로 바꿉니다. 원격을 연결한 이후의 커밋은 기존 이력을 유지하며 올립니다. 강제 push는 필요하지 않습니다.
+이후 커밋도 기존 이력을 유지하며 올립니다. 강제 push는 필요하지 않습니다. 업로드한 뒤 다른 PC에서 저장소를 받을 때는 다음 주소를 사용합니다.
+
+```powershell
+git clone https://github.com/JuggernautSensei/Dear-Today.git
+cd Dear-Today
+```
 
 ## 자동 빌드와 시연 파일
 
