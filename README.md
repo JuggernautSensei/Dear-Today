@@ -2,7 +2,7 @@
 
 # Dear Today
 
-**자기 전 10분 정도만 들려주세요.**
+**일기장 어플리케이션**
 
 ![Java 17](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)
 ![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)
