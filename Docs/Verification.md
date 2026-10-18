@@ -23,12 +23,12 @@ Android Studio는 설치하지 않았습니다. JDK와 SDK는 프로젝트 밖�
 | --- | --- |
 | `Scripts/Build.ps1` | Debug APK 생성 |
 | `Scripts/Build.ps1 -Config Release` | 서명하지 않은 Release APK 생성 |
-| Android Lint | 오류 0개, 경고 3개 |
+| Android Lint | 오류 0개, 경고 4개 |
 | `Scripts/Build.ps1 -Test` | 기기 테스트 10개 통과 |
 | `Scripts/Run.ps1 -SkipBuild` | 실행 중인 에뮬레이터 재사용, APK 설치·실행 |
 | 에뮬레이터 종료 후 다시 실행 | 전용 가상 기기 부팅·앱 실행 확인 |
 
-Lint 경고 세 개는 고정한 AndroidX 테스트 라이브러리의 새 버전 알림입니다. 앱의 API 호환성 오류는 해결했습니다. `android.overridePathCheck=true`에 대한 Gradle 안내도 출력됩니다. 한글이 포함된 프로젝트 경로에서 빌드를 허용하기 위한 설정입니다.
+Lint 경고는 고정한 AndroidX 테스트 라이브러리의 새 버전 알림 3개(`GradleDependency`)와 동적 언어 설정에 대한 App Bundle 언어 분할 관련 알림 1개(`AppBundleLocaleChanges`)입니다. 앱의 API 호환성 오류는 해결했습니다. `android.overridePathCheck=true`에 대한 Gradle 안내도 출력됩니다. 한글이 포함된 프로젝트 경로에서 빌드를 허용하기 위한 설정입니다.
 
 자동 검증은 저장 테스트 8개, 화면 이동 테스트 1개, 생명주기 테스트 1개로 구성했습니다. 저장 테스트는 별도 `verification.db`를 사용합니다. 생명주기 테스트는 특정 과거 날짜의 기록·초안을 보관했다가 시험 후 복구합니다. 현재 테스트를 실행하는 스크립트는 `adb install -r`과 instrumentation을 사용하며, 시험이 끝났다고 앱을 제거하지 않습니다.
 
