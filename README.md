@@ -14,8 +14,6 @@
 <img src="Docs/Images/history.png" width="30%" alt="날짜와 제목으로 정리한 월별 일기 목록">
 </p>
 
-*Android 15 에뮬레이터로 캡처한 앱 화면.*
-
 </div>
 
 ## Contents
@@ -51,8 +49,6 @@
 지난 기록은 월별 목록에서 날짜와 제목, 본문 일부를 확인할 수 있습니다. 과거 날짜의 일기도 작성할 수 있고, 목록에서 글을 열어 수정하거나 삭제할 수 있습니다. 화면 이동과 입력 처리는 [`MainActivity`](app/src/main/java/com/jiwoo/todaydiary/MainActivity.java)에 있습니다.
 
 <p align="center"><img src="Docs/Images/detail.png" width="320" alt="저장한 일기를 읽고 수정하거나 삭제할 수 있는 화면"></p>
-
-*저장한 일기의 읽기 화면.*
 
 <br>
 
