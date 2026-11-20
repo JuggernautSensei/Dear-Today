@@ -1,20 +1,18 @@
-<div align="center">
+<h1 align="center">Dear Today</h1>
 
-# Dear Today
+<p align="center">Java와 SQLite로 만든 Android 일기장 앱</p>
 
-**간단한 일기장 어플리케이션**
-
-![Java 17](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)
-![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white" alt="Java 17">
+  <img src="https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white" alt="Android 8.0+">
+  <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite">
+</p>
 
 <p align="center">
 <img src="Docs/Images/cover.png" width="30%" alt="짙은 갈색 가죽 표지와 일기장 펼치기 버튼">
 <img src="Docs/Images/writing.png" width="30%" alt="아이보리 종이 위에 손글씨 글꼴로 일기를 작성하는 화면">
 <img src="Docs/Images/history.png" width="30%" alt="날짜와 제목으로 정리한 월별 일기 목록">
 </p>
-
-</div>
 
 ## Contents
 
@@ -24,21 +22,15 @@
 - [검증](#검증)
 - [빌드 및 실행](#빌드-및-실행)
 
-<br>
-
 ## 프로젝트 소개
 
-**Dear Today**(오늘하루는)는 잠들기 전에 오늘 있었던 일과 마음을 짧게 남기는 Android 일기장입니다. 하루를 길게 정리하지 않아도 한두 줄을 적고 마무리할 수 있는 앱으로 만들었습니다.
+Dear Today(오늘하루는)는 잠들기 전에 오늘 있었던 일과 마음을 짧게 남기는 Android 일기장입니다. 하루를 길게 정리하지 않아도 한두 줄을 적고 마무리할 수 있는 앱으로 만들었습니다.
 
-모바일 프로그래밍 강의에서 배운 내용을 실제 앱에 적용해 보기 위해 시작했습니다. Java와 모바일 프로그래밍을 처음 배우는 단계에서 Android Studio로 ‘나만의 일기장’을 만들었고, 이후 수업에서 배운 데이터베이스와 AI 도구를 활용해 기능과 화면을 보완했습니다.
-
-<br>
+모바일 프로그래밍 강의에서 배운 내용을 실제 앱에 적용해 보기 위해 시작했습니다. Android Studio로 ‘나만의 일기장’을 만들었고, 이후 수업에서 배운 데이터베이스와 AI 도구를 활용해 기능과 화면을 보완했습니다.
 
 ## 개선
 
-약 1년 전에 제작한 일기장을 바탕으로 2026년 10월 9일부터 개선을 시작했습니다. 기존에는 파일 입출력으로 일기를 텍스트 파일에 기록했는데, 데이터베이스 수업에서 배운 내용을 활용해 SQLite 데이터베이스에 저장하도록 바꿨습니다. AI의 도움을 받아 디자인을 다듬고, 테스트와 자체 QA를 진행해 부족했던 검증 절차도 보완했습니다.
-
-<br>
+약 1년 전에 제작한 일기장을 바탕으로 2026년 10월 9일부터 개선했습니다. 기존에는 파일 입출력으로 일기를 텍스트 파일에 기록했는데, 데이터베이스 수업에서 배운 내용을 활용해 SQLite에 저장하도록 바꿨습니다. 디자인은 AI의 도움을 받아 다듬었습니다.
 
 ## 앱 화면
 
@@ -53,14 +45,14 @@
 <img src="Docs/Images/date-picker.png" width="320" alt="작성할 일기의 날짜를 선택하는 달력 화면">
 </p>
 
-<br>
-
 ## 검증
 
-기존 과제에서 부족했던 검증은 AI의 도움으로 테스트를 작성하고, 에뮬레이터에서 실제 동작을 확인하며 보완했습니다. 한글 입력과 줄바꿈이 저장되는지, 앱을 다시 열었을 때 글이 남아 있는지, 수정 중인 초안이 원래 일기를 덮어쓰지 않는지 등을 점검했습니다. 키보드가 올라왔을 때와 작은 화면에서도 작성과 저장을 할 수 있도록 화면을 다듬었습니다.
+<p align="center">
+<img src="Docs/Images/compact-writing.png" width="320" alt="저장한 일기를 수정 중임을 알리는 문구와 ‘수정한 기록 남기기’ 버튼이 보이는 작성 화면">
+<img src="Docs/Images/keyboard-korean.png" width="320" alt="키보드를 올린 상태에서 입력란과 ‘오늘 기록 남기기’ 버튼이 함께 보이는 작성 화면">
+</p>
 
-
-<br>
+테스트는 AI의 도움으로 작성했고, 에뮬레이터에서 실제 동작도 확인했습니다. 계측 테스트는 `DiaryStoreTest`, `DiaryLifecycleTest`, `NotebookUiTest`입니다. 한글 입력과 줄바꿈이 저장되는지, 앱을 다시 열었을 때 글이 남아 있는지, 수정 중인 초안이 원래 일기를 덮어쓰지 않는지 등을 점검했습니다. 키보드가 올라왔을 때와 작은 화면에서도 작성과 저장을 할 수 있도록 화면을 다듬었습니다.
 
 ## 빌드 및 실행
 
