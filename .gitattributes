@@ -1,0 +1,19 @@
+* text=auto
+*.java text eol=lf
+*.gradle text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+*.png binary
+*.ttf binary
+*.jar binary
+*.yml text eol=lf
+*.json text eol=lf
+*.properties text eol=lf
+*.txt text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+app/src/main/assets/fonts/OFL-*.txt -whitespace

@@ -1,0 +1,16 @@
+<resources>
+    <item type="id" name="open_notebook" />
+    <item type="id" name="diary_title" />
+    <item type="id" name="diary_body" />
+    <item type="id" name="save_entry" />
+    <item type="id" name="today_tab" />
+    <item type="id" name="history_tab" />
+    <item type="id" name="date_picker" />
+    <item type="id" name="previous_month" />
+    <item type="id" name="next_month" />
+    <item type="id" name="edit_entry" />
+    <item type="id" name="delete_entry" />
+    <item type="id" name="draft_status" />
+    <item type="id" name="close_notebook" />
+    <item type="id" name="entry_list" />
+</resources>
